@@ -5,6 +5,15 @@ package ca.ualberta.cs.lonelytwitter;
  */
 import java.util.Date;
 
+
+/**
+ * Represents an important tweet
+ * @author cameronmcintyre
+ * @version 1.5
+ * @see NormalTweet
+ * @see Tweet
+ */
+
 public class ImportantTweet extends Tweet {
     ImportantTweet(String message){
         super(message);

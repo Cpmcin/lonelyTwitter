@@ -26,6 +26,14 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * @author cameronmcintyre
+ * @see Tweet
+ * @see ImportantTweet
+ * @see NormalTweet
+ * The activity for tweets
+ */
+
 public class LonelyTwitterActivity extends Activity {
 
 	private static final String FILENAME = "tweets.sav";
@@ -88,6 +96,9 @@ public class LonelyTwitterActivity extends Activity {
 
 	}
 
+	/**
+	 * Loads previous tweets from file
+	 */
 	private void loadFromFile() {
 
 		try {
@@ -108,7 +119,11 @@ public class LonelyTwitterActivity extends Activity {
 		}
 
 	}
-	
+
+	/**
+	 * @author cameron mcintyre
+	 * Saves the tweets so that they may be accessed later
+	 */
 	private void saveInFile() {
 		try {
 
